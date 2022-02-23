@@ -163,16 +163,16 @@ var time2 = moment().tz('Asia/Jakarta').format('HH:mm:ss')
 //━━━━━━━━━━━━━━━[ CONNECTION 1 ]━━━━━━━━━━━━━━━\\            
 		mess = {
 			wait: '```𝘛𝘶𝘯𝘨𝘨𝘶 𝘉𝘦𝘯𝘵𝘢𝘳𝘳...```',
-		  	  success: '```𝘚𝘶𝘤𝘤𝘦𝘴𝘴 𝘕i𝘩```',
+		  	  success: '```Succes Kak```',
 			   error: {
-				stick: '```𝘚𝘵𝘪𝘤𝘬𝘦𝘳 𝘈𝘦 𝘟𝘰𝘯𝘵𝘰𝘭```',
-				 Iv: '```𝘓𝘪𝘯𝘬 𝘌𝘙𝘙𝘖𝘙 𝘉𝘳𝘶𝘩𝘩_-```',
+				stick: '```Sticker by DVT```',
+				 Iv: '```Maaf Link Eror kak```',
 	 	          },
 			       only: {
 	    	        group: '```𝘒𝘩𝘶𝘴𝘶𝘴 𝘎𝘳𝘰𝘶𝘱 𝘉𝘳𝘰𝘰```',
-	    	        owner: 'Khusus Owner Slurr',
+	    	        owner: 'Khusus Owner Kak',
 	    	        admin: 'Khusus Admin...',
-	    	        bot: 'Bo5 Harus Admin Boss',
+	    	        bot: 'Maaf Kak Bot Tidak Menjadi Admin Group',
                   }
 	        	}
 		const isUrl = (url) => {
@@ -191,10 +191,10 @@ var time2 = moment().tz('Asia/Jakarta').format('HH:mm:ss')
             (id == null || id == undefined || id == false) ? zee.sendMessage(from, teks.trim(), extendedText, { contextInfo: { "mentionedJid": memberr } }) : zee.sendMessage(from, teks.trim(), extendedText, { quoted: mek, contextInfo: { "mentionedJid": memberr } })
         }
         //+++ || FAKE TROLI         
-        const troli =  {key: { fromMe: false,remoteJid: "status@broadcast", participant: '0@s.whatsapp.net'}, message: {orderMessage: {itemCount: 2022, status: 200, thumbnail: tamnel, surface: 200, message: `𝗭𝗘𝗘𝗦𝗘𝗟𝗙𝗕𝗢𝗧`, orderTitle: 'LordPebri', sellerJid: '0@s.whatsapp.net'} } }    
+        const troli =  {key: { fromMe: false,remoteJid: "status@broadcast", participant: '0@s.whatsapp.net'}, message: {orderMessage: {itemCount: 2022, status: 200, thumbnail: tamnel, surface: 200, message: `Devils V Tiesr`, orderTitle: 'BLZXB5', sellerJid: '0@s.whatsapp.net'} } }    
 
 const katalog = (teks) => {
-             res = zee.prepareMessageFromContent(from,{ "orderMessage": { "itemCount": 999999999, "message": teks, "footerText": "©Zeebot", "jpegThumbnail": fs.readFileSync('./media/zeebot.jpg'), "surface": 'CATALOG' }}, {quoted:troli})
+             res = zee.prepareMessageFromContent(from,{ "orderMessage": { "itemCount": 999999999, "message": teks, "footerText": "©Miyuki DVT", "jpegThumbnail": fs.readFileSync('./media/zeebot.jpg'), "surface": 'CATALOG' }}, {quoted:troli})
              zee.relayWAMessage(res)
         }
         
@@ -495,7 +495,7 @@ switch (command) {
           break           
 
 //>>>WibuMenu
-   /* case 'nezuko':
+    case 'nezuko':
     case '
           pin = await hx.pinterest(commnad)
           ac = pin[Math.floor(Math.random() * pin.length)]
@@ -706,8 +706,8 @@ switch (command) {
           zee.sendMessage(from, buffer, sticker, { quoted: mek })
           break;		  
     case 'sticker': case 'stiker': case 'sg': case 's':
-          var a = "ZeeBot";
-          var b = "By Pebri";
+          var a = "Miyuki DVT";
+          var b = "By DVT";
           if (isMedia && !mek.message.videoMessage || isQuotedImage ) {
           const encmedia = isQuotedImage   ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
            media = await zee.downloadAndSaveMediaMessage(encmedia)
@@ -1373,7 +1373,7 @@ switch (command) {
           const { wm, nowm, audio } = result
           axios.get(`https://tinyurl.com/api-create.php?url=${nowm}`)
           .then(async (a) => {
-    	  me = `𝘕𝘦𝘩 𝘉𝘳𝘰𝘰✔︎`
+    	  me = `Nih Kak`
 	      zee.sendMessage(from,{url:`${nowm}`},video,{mimetype:'video/mp4',quoted:mek,caption:me})
           })
 		  })
@@ -1759,7 +1759,7 @@ ${q+=1}.term`)
           but = [
            { buttonId: `!owner`, buttonText: { displayText: 'ᴏᴡɴᴇʀ️' }, type: 1 },
            { buttonId: `!sewa`, buttonText: { displayText: 'sᴇᴡᴀ' }, type: 1 }]
-          sendButton(from, pp, 'Created By Pebri', but, troli)
+          sendButton(from, pp, 'Created By DVT Team', but, troli)
           break         
           
          case 'owner':
@@ -1776,7 +1776,7 @@ ${q+=1}.term`)
          zee.sendMessage(from, {displayName: `Creator Bot`, vcard: vcard2}, contact, 
          { quoted: troli, 
          })
-         reply('*_Jangan Lupa Subscrib_*\nhttps://youtube.com/c/FEBZABOTZ')
+         reply('*_Jangan Lupa Subscrib_*\nhttps://youtube.com')
          break
              
 		                         
@@ -1789,7 +1789,7 @@ ${q+=1}.term`)
           if (isCmd) {      
           menu = monospace(`Maaf kak ${pushname}_<\nCommand ${command} Tidak tersedia di list menu!!\nMohon cek kembali list menu nya kak`)
           but = [{ buttonId: `!menu`, buttonText: { displayText: 'MENU' }, type: 1 }]
-          sendButton(from, menu, 'Created By Pebri', but, mek)
+          sendButton(from, menu, 'Created By DVT Team', but, mek)
           break
           }
               

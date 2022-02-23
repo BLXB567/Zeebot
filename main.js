@@ -35,7 +35,7 @@ const time2 = moment().tz('Asia/Jakarta').format('HH:mm:ss')
           var ucapanWaktu = 'GoodNight'
 }
            
-const starts = async (zee = new WAConnection()) => {
+const starts = async (zee = New WAConnection()) => {
     zee.logger.level = 'warn' 
     console.log(banner)
     console.log('\x1b[1;31m×\x1b[1;37m>', '[\x1b[1;32mシ︎\x1b[1;37m]', color('Hallo'), 'Kak', color(`${Miminnya}`))
@@ -127,7 +127,7 @@ const starts = async (zee = new WAConnection()) => {
  * @param {function} cb <optional> 
  */
 function nocache(module, cb = () => { }) {
-    console.log('[ ! ]', `${module}`, 'Ni bang Senggol Dong :3')
+    console.log('[ ! ]', `${module}`, 'Ni bang Senggol Dong')
     fs.watchFile(require.resolve(module), async () => {
         await uncache(require.resolve(module))
         cb(module)

@@ -35,7 +35,7 @@ const time2 = moment().tz('Asia/Jakarta').format('HH:mm:ss')
           var ucapanWaktu = 'GoodNight'
 }
            
-const starts = async (zee = New WAConnection()) => {
+const starts = async (zee =  WAConnection()) => {
     zee.logger.level = 'warn' 
     console.log(banner)
     console.log('\x1b[1;31m×\x1b[1;37m>', '[\x1b[1;32mシ︎\x1b[1;37m]', color('Hallo'), 'Kak', color(`${Miminnya}`))

@@ -39,14 +39,14 @@ const starts = async (zee = new WAConnection()) => {
     zee.logger.level = 'warn' 
     console.log(banner)
     console.log('\x1b[1;31m×\x1b[1;37m>', '[\x1b[1;32mシ︎\x1b[1;37m]', color('Hallo'), 'Kak', color(`${Miminnya}`))
-    console.log(color(`SCRIPT INI DI SUSUN OLEH`,'yellow'))
-    console.log(color(`• 𝙁𝙚𝙗𝙧𝙞𝙖𝙣𝙨𝙮𝙖𝙝`,'yellow'))
+    console.log(color(`SCRIPT INI DI SALIN OLEH DVT`,'yellow'))
+    console.log(color(`• Devils V Tiers`,'yellow'))
     console.log(color(`Be Smart People`,'yellow'))   
     console.log(color(`Quotes : ${gombal}`,'cyan'))
     console.log(color('#Semangat Untuk Hari ini','yellow'))
  
     zee.version = [2, 2143, 3]
-    zee.browserDescription = [ 'ZeeBotz', 'Safari', '3.5' ]
+    zee.browserDescription = [ 'test', 'DVR', '3.5' ]
     zee.on('qr', () => {
     console.log(color('[','white'), color('!','cyan'), color(']','white'), color('Scan Ngab, gk scan gk jadi'))
     })
@@ -98,7 +98,7 @@ const starts = async (zee = new WAConnection()) => {
                 anu_user = v.vname || v.notify || num.split('@')[0]
               teks = `Selamat Datang Kak *@${mem.split('@')[0]}*\n*Welcome in group *${groupName}*\n*Nomor :* ${mem.replace('@s.whatsapp.net', '')}\nSilahkan Baca Rules Groupnya Kak\n\n*Semoga betah~~*`
               buff = await getBuffer(pic)
-              zee.sendMessage(mdata.id, { contentText: `${teks}`, footerText: `Welcome Message By *Pebri*`, buttons: [{buttonId: `.selamatdatang`,buttonText:{displayText: 'WELCOME KAK'},type:1}],headerType: 'LOCATION', locationMessage: { degreesLatitude: '', degreesLongitude: '', jpegThumbnail: buff, contextInfo: {"mentionedJid": [num]}}}, 'buttonsMessage')
+              zee.sendMessage(mdata.id, { contentText: `${teks}`, footerText: `Welcome Message By Miyuki DVT`, buttons: [{buttonId: `.selamatdatang`,buttonText:{displayText: 'WELCOME KAK'},type:1}],headerType: 'LOCATION', locationMessage: { degreesLatitude: '', degreesLongitude: '', jpegThumbnail: buff, contextInfo: {"mentionedJid": [num]}}}, 'buttonsMessage')
 		}
 		
 		if (!isWelkom) return
@@ -110,7 +110,7 @@ const starts = async (zee = new WAConnection()) => {
                 memeg = mdata.participants.length
                 out = `Selamat Tinggal Kak @${num.split('@')[0]} Semoga Jasamu Tidak Tenang!`
                buff = await getBuffer(pic)
-               zee.sendMessage(mdata.id, { contentText: `${out}`, footerText: `Left Message By *Pebri*`, buttons: [{buttonId: `.bay`,buttonText:{displayText: 'BYE KAK👋'},type:1}],headerType: 'LOCATION', locationMessage: { degreesLatitude: '', degreesLongitude: '', jpegThumbnail: buff, contextInfo: {"mentionedJid": [num]}}}, 'buttonsMessage')
+               zee.sendMessage(mdata.id, { contentText: `${out}`, footerText: `Left Message By Miyuki DVT`, buttons: [{buttonId: `.bay`,buttonText:{displayText: 'BYE KAK👋'},type:1}],headerType: 'LOCATION', locationMessage: { degreesLatitude: '', degreesLongitude: '', jpegThumbnail: buff, contextInfo: {"mentionedJid": [num]}}}, 'buttonsMessage')
             }
 			} catch (e) {
 			console.log('Error : %s', color(e, 'red'))
@@ -127,7 +127,7 @@ const starts = async (zee = new WAConnection()) => {
  * @param {function} cb <optional> 
  */
 function nocache(module, cb = () => { }) {
-    console.log('[ ! ]', `${module}`, 'Ni Boss Senggol Dong💜😈')
+    console.log('[ ! ]', `${module}`, 'Ni bang Senggol Dong :3')
     fs.watchFile(require.resolve(module), async () => {
         await uncache(require.resolve(module))
         cb(module)

@@ -503,7 +503,7 @@ switch (command) {
           but = [
            { buttonId: `${prefix + command} ${v}`, buttonText: { displayText: 'NEXT' }, type: 1 }]
           sendButImage(from, `pinterest ${v}`, `Klik Next Ngab`, di, but)
-          break*/
+          break/
                     
 //»»»𝘚𝘦𝘢𝘳𝘤𝘩𝘪𝘯𝘨 𝘔𝘦𝘯𝘶
     case 'gimage':
